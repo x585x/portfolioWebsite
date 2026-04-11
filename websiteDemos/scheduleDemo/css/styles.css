@@ -1,0 +1,114 @@
+/* -------------------------------------------------------------------
+Ben Conlon
+W0871919
+Nov. 4th, 2025
+
+TABLE OF CONTENTS:
+
+1. Main
+2. Page Header
+3. Table
+4. Image
+5. Course List
+
+TYPOGRAPHY GUIDE: ----------------------------------------------------
+
+
+COLOR GUIDE: ---------------------------------------------------------
+Background: lightgrey and grey
+Borders: Black and lightgrey 
+text: white and black
+
+------------------------------------------------------------------- */
+
+/* Main */
+body {
+    background-color: lightgrey;
+    font-family: "Work Sans";
+}
+.list-table {
+    display: flex;
+}
+
+/* Page Header */
+h1 {
+    font-size: 3em;
+    margin: 30px;
+}
+
+/* Table */
+caption {
+    margin: 15px;
+    color: black;
+    text-align: left;
+    font-size: 1.5em;
+}
+tr {
+    border: lightgrey dashed 2px;
+    border-right: grey solid 0px;
+}
+tr:last-child {
+    border: grey solid 0px;
+}
+table {
+    width: 1000px;
+    background-color: grey;
+    color: white;
+    margin: 30px;
+}
+th {
+    padding: 15px;
+    border: black solid 4px;
+}
+td {
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.work:hover, .school:hover, .school-test:hover, .free-time:hover, .dentist:hover {
+    color: lightgrey;
+}
+.work  {
+    background-color: hsl(270, 24%, 52%);
+}
+.school {
+    background-color: hsl(148, 50%, 59%);
+}
+.school-test {
+    background-color: #00693C;
+}
+.dentist {
+    background-color: hsl(0, 79%, 64%);
+}
+.free-time {
+    background-color: hsl(299, 76%, 82%);
+}
+
+/* Image */
+
+img {
+    width: 200px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Course list */
+
+.course-list {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    background-color: grey;
+    padding: 10px;
+    color: white;
+}
+.course-list > h2 {
+    font-size: 1.7em;
+    border-bottom: lightgrey dotted 2px;
+    padding: 10px;
+}
+.course-list li {
+    text-indent: 15px;
+    padding: 10px;
+}

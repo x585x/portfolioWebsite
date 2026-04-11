@@ -1,0 +1,225 @@
+/* -------------- Background ------------------------------------------------------ */
+body {
+    background: #080000;
+    background: linear-gradient(90deg, rgba(8, 0, 0, 1) 0%, rgba(111, 87, 199, 1) 50%, rgba(138, 63, 63, 1) 100%);
+    font-family: "Iceland", sans-serif;
+    color: white;
+}
+
+.content {
+    min-height: 50dvh;
+}
+/* -------------- Headings ------------------------------------------------------ */
+h2 {
+    display: flex;
+    font-size: x-large;
+    color: white;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 0px;
+    margin-top: 55px;
+}
+
+/* -------------- Nav Bar ------------------------------------------------------ */
+.nav-bar, footer {
+    display: flex;
+    background-color: purple;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-style: italic;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.nav-bar h2 {
+    padding: 0px;
+    margin: auto;
+}
+.nav-title {
+    font-size: x-large;
+    display: inline-block;
+    font-size: 2em;
+}
+.nav-list {
+    display: flex;
+}
+.nav-list > li > a{
+    display: inline-block;
+    margin: auto;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 1.5em;
+    color: rgb(150, 150, 150);
+}
+.nav-list > li > a:hover {
+    font-size: 1.6em;
+}
+
+@media (max-width: 750px) {
+    .nav-bar {
+        flex-direction: column;
+        padding: 2px;
+    }
+    .nav-list, .nav-title {
+        display: flex;
+        margin: auto;
+        padding: auto;
+    }
+    .nav-bar h2 {
+        display: none;
+    }
+    .nav-list > li > a {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-list {
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* -------------- JS Color Grid ------------------------------------------------------ */
+table {
+    margin: auto;
+    margin-bottom: 40px;
+}
+#js-color-grid {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+#js-color-grid td {
+    width: 1vw;
+    height: 1vw;
+    border: 1px solid black;
+}
+
+#grid-controls {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 12px;
+    margin-top: 50px;
+}
+#grid-controls h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+@media (min-width: 1000px) {
+    #grid-controls {
+        display: flex;
+        max-width: 500px;
+    }
+}
+
+
+#draw, #erase {
+    max-width: 40px;
+    display: none;
+}
+
+/* -------------- Section Header ------------------------------------------------------ */
+.section-header {
+    display: block;
+    background-image: linear-gradient( 135deg, #e3bef8 10%, #b285cc 100%);
+    border: 2px solid white;
+    width: fit-content;
+    border-radius: 50px;
+    margin: auto;
+    
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section-header h1 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* -------------- Section Content ------------------------------------------------------ */
+.section {
+    margin: auto;
+    border-bottom: 15px dashed;
+    padding-bottom: 50px;
+    margin-bottom: 70px;
+}
+
+.section ul {
+    margin: auto;
+}
+.section li {
+    display: flex;
+    margin: auto;
+    max-width: fit-content;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.img-header {
+    margin: auto;
+    max-width: fit-content;
+    font-size: 2em;
+    color: black;
+    background-color: #B285CC;
+    padding: 5px;
+    border: solid 3px black;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* section image */
+.section-img {
+    display: flex;
+    width: 100px;
+    border: 2px solid pink;
+}
+
+
+/* -------------- textbox ------------------------------------------------------ */
+.textbox {
+    display: flex;
+    border: 2px solid pink;
+    margin-right: 7px;
+    background-color: purple;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 300px;
+}
+
+
+/* -------------- resume and cert ------------------------------------------------------ */
+.big-img {
+    display: flex;
+    width: 500px;
+    margin: auto;
+    border: 10px solid #b285cc;
+}
+.big-img:hover {
+    width: 550px;
+}
+
+@media (max-width: 600px) {
+    .big-img, .big-img:hover {
+        width: 280px;
+    }
+}
+
+
+/* -------------- Footer (has all the same settings as nav-bar) ------------------------------------------------------ */
+footer {
+    max-width: none;
+}

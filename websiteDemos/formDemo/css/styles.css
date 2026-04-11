@@ -1,0 +1,68 @@
+/* -------------------------------------------------------------------
+Ben Conlon
+W0871919
+Oct. 28th, 2025
+
+TABLE OF CONTENTS:
+
+1. Form
+2. Headings
+3. Footer
+4. Images
+
+TYPOGRAPHY GUIDE: ----------------------------------------------------
+
+Font: quicksand
+
+COLOR GUIDE: ---------------------------------------------------------
+Background: lightgrey
+Borders: Black 
+text: Black
+
+------------------------------------------------------------------- */
+
+body {
+    margin: 15px;
+    background-color: lightgrey;
+    font-family: 'quicksand';
+}
+
+/* Form */
+label {
+    display: block;
+    font-weight: 500;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+/* headings */
+h2 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 900;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+}
+footer > p {
+    padding: 5px;
+}
+
+/* Images */
+img {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 8px solid black;
+}

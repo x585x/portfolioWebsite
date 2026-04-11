@@ -1,0 +1,155 @@
+/* Songs menu stylesheet */
+.songs-menu {
+    display: none; /* Was previously block */
+    padding: 10px;
+    background-image: url('../img/window.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 519 / 571;
+    width: 500px;
+    margin: auto;
+    color: black;
+}
+
+.song-item {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.song-item * {
+    margin-right: 10px;
+}
+h1 {
+    font-size: 25px;
+}
+
+.song-list {
+    margin: 70px;
+    margin-left: 50px;
+}
+
+.song-header {
+    color: black;
+    margin-top: 16px;
+}
+
+.play-button {
+    max-width: 40px;
+    margin: 10px;
+}
+
+/* songlist headers ------------------------------------------------- */
+#songlist-header-container {
+    margin: auto;
+}
+#songlist-header {
+    color: black;
+    margin: auto;
+    margin-top: 18px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    font-style: normal;
+}
+
+audio {
+    max-width: 220px;
+    margin-left: auto;
+}
+
+@media (max-width: 450px) {
+    .songs-menu {
+        display: none;
+        background-color: rgba(255, 207, 219, 0.24);
+        background-image: none;
+        max-width: fit-content;
+
+    }
+    #songlist-header-container, #songlist-header {
+        padding-bottom: 15px;;
+    }
+
+    .songs-menu {
+        padding: 30px;
+        padding-top: 15px;
+    }
+
+
+    .song-item {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .song-item * {
+        margin: auto;
+    }
+    .song-list {
+        margin: 0px;
+    }
+    .song-title {
+        margin-bottom: 20px;
+    }
+    .play-button {display: none;}
+}
+
+
+/* ------------ Footer ------------------- */
+#pre-footer {
+    padding-bottom: 150px;
+}
+/* links */
+a {
+    color: pink;
+}
+
+/* -------------- Password box -------------- */
+#password-form {
+    display: flex;
+    flex-direction: column;
+    background: #f7dce1;
+    background: linear-gradient(90deg, rgba(247, 220, 225, 1) 25%, rgba(179, 166, 222, 1) 50%, rgba(184, 209, 184, 1) 100%);
+    margin: auto;
+    margin-top: 10px;
+    width: 600px;
+    padding: 35px;
+    color: black;
+}
+#password-form * {
+    width: 300px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;    
+}
+
+#password-form label {
+    font-size: 1.5em;
+}
+#password-text-box {
+    margin: auto;
+}
+@media (max-width: 760px) {
+    #password-form {
+        width: 400px;
+    }
+}
+@media (max-width: 470px) {
+    #password-form {
+        width: 200px;
+    }
+    #password-form * {
+        max-width: 180px;
+    }
+    #password-form label {
+        font-size: 1.3em;
+    }
+    #password-text-box h1, #password-text-box{
+        font-size: 1em;
+        max-width: 200px;
+        margin: auto;
+    }
+    
+}
+
+
+

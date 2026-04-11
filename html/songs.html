@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Conlon - Songs</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/songs.css">
+    <!-- Header Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+
+    <!-- windows like font  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+    <div class="nav-bar">
+            <!-- Nav Bar -->
+            <h3 class="nav-title">Ben Conlon Music</h3>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#" style="color: white;">Songs</a></li>
+                <li><a href="https://www.linkedin.com/in/benjamin-conlon-992b5b181">LinkedIn</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <!------------------------ Password entry for viewing songs ---------------------------------->
+        <div id="password-section">
+            <div class="textbox" id="password-text-box">
+                <h1>Accessing the songs menu requires you to break in! :(</h1>
+            </div>
+            <form id="password-form" action="./songs.html" method="GET">
+                <label for="password">Enter the password:</label>
+                <input type="password" name="password" id="password-field">
+                <input id="submit" type="submit" value="Login">
+            </form>
+        </div>
+
+        
+
+        <!--------------------------- Songs Menu ------------------------------->
+        <div class="songs-menu">
+            <div id="songlist-header-container"><h2 id="songlist-header">Songs.exe</h2></div>
+            <ul class="song-list">
+                <!-- Each song item is a songs play button name and audio file-->
+                <li class="song-item">
+                    <img class="play-button" src="../img/play-pause.png">
+                    <h1 class="song-header">Heaviest</h1>
+                    <audio src="../songs/heaviest.wav" controls></audio>
+                </li>
+                <li class="song-item">
+                    <img class="play-button" src="../img/play-pause.png">
+                    <h1 class="song-header">67</h1>
+                    <audio src="../songs/67.wav" controls></audio>
+                </li>
+                <li class="song-item">
+                    <img class="play-button" src="../img/play-pause.png">
+                    <h1 class="song-header">bolts</h1>
+                    <audio src="../songs/cool rif no lead.wav" controls></audio>
+                </li>
+                <li class="song-item">
+                    <img class="play-button" src="../img/play-pause.png">
+                    <h1 class="song-header">SKULLS</h1>
+                    <audio src="../songs/hole in my skull.wav" controls></audio>
+                </li>
+                <li class="song-item">
+                    <img class="play-button" src="../img/play-pause.png">
+                    <h1 class="song-header">Tornato</h1>
+                    <audio src="../songs/tornato.wav" controls></audio>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div id="pre-footer"></div>
+        <footer>
+            <p>All songs written by me.</p>
+        </footer>
+        <script src="../js/songs.js"></script>
+</body>
+</html>

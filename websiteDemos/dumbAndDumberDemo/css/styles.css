@@ -1,0 +1,117 @@
+/* Table of contents ----------------------------------------------------------------------------------------------
+
+Ben Conlon
+0871919
+November 11th, 2025
+Section 003
+
+1. Main
+2. Sections
+3. Headings
+4. Text
+5. actor-box
+6. Footer
+
+---------------------------------------------------------------------------------------------------------------- */ 
+
+/* Main */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header, main {
+    width: auto;
+    overflow: hidden;
+}
+main {
+    float: left;
+}
+
+/* Sections */
+.reviews, .summary, .cast {
+    border: 0.4vw black solid;
+    padding: 2vw;
+    margin: 1vw;
+    background-color: grey;
+    color: white;
+    float: left;
+    max-width: 30vw;
+
+}
+.review-box {
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    padding-top: 1vw;
+    border-top: 0.5vw lightgrey dotted;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    padding-bottom: 1vw;
+}
+
+h2 {
+    font-size: 2vw;
+    font-weight: 900;
+    padding-bottom: 1vw;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+    padding-top: 1.5vw;
+}
+
+/* text */
+p {
+    font-size: 1vw;
+}
+
+/* actor-box */
+.actor-box {
+    display: flex;
+    margin: 1vw;
+}
+.actor-box img {
+    max-width: 7vw;
+    border-right: 0.5vw lightgrey dotted;
+    margin-right: 1vw;
+    padding-right: 1vw;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 15px;
+}
+
+picture img {
+    float: left;
+    max-width: 59vw;
+    margin: 1vw;
+}
+
+
+@media screen and (max-width: 450px) {
+    body {max-width: 400px;}   
+    .reviews, .summary {
+        max-width: 80vw;
+    }
+    picture img, .cast {
+        max-width: 26vw;
+    }
+}
+
+@media screen and (max-width: 4000px){
+    body {max-width: 4000px;}
+}

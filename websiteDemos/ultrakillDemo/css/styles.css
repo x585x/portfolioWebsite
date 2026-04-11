@@ -1,0 +1,216 @@
+/* Table of contents ---------------------------------------------------------------
+
+1. Fonts
+2. Headings
+3. Main
+4. Title
+5. Sections
+6. Media
+7. Footer
+8. Responsivness
+
+-----------------------------------------------------------------------------------
+
+TYPOGRAPHY:
+Fonts: 
+1. VCR OSD Mono
+2. Iceland
+
+-----------------------------------------------------------------------------------
+
+Colors: 
+1. Background: lightgrey
+2. info-box background: grey
+3. sidebars: rgb(148, 4, 4)
+4. Text colors: red and black
+
+----------------------------------------------------------------------------------- */
+
+/* Fonts */
+/*   Font from: https://www.dafont.com/vcr-osd-mono.font (It is the actual font used in the game!)   */
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('../fonts/ULTRAKILL_Fonts/VCROSDMono.woff2') format('woff2'),
+         url('../fonts/ULTRAKILL_Fonts/VCROSDMono.woff') format('woff'),
+         url('../ULTRAKILL_Fonts/VCR_OSD_MONO_1.001.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* Font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+p, footer a {
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Headings */
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+h3 {
+    font-size: 20px;
+}
+h1, h2, h3 {font-family: 'VCR OSD Mono';}
+
+/* Main */
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 2000px;
+}
+.main {
+    padding: 15px;
+    border-left: rgb(148, 4, 4) solid 5vw;
+    border-right: rgb(148, 4, 4) solid 5vw;
+    background-color: lightgrey;
+}
+
+
+
+/* Title */
+.title-box {
+    text-align: center;
+    background-color: black;
+    color: red;
+    padding: 15px;
+    padding-bottom: 25px;
+}
+.title-box-text {
+    display: inline-block;
+}
+.title-box img {
+    width: 80px;
+    display: inline-block;
+}
+.title-box img:first-of-type {
+    transform: rotate(-20deg);
+    margin-right: 40px;
+}
+.title-box img:last-of-type {
+    transform: rotate(20deg);
+    margin-left: 40px;
+}
+
+/* Sections */
+.info-box {
+    background-color: grey;
+    border: black solid 6px;
+    border-radius: 5%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    padding: 3%;
+    line-height: 22px;
+}
+.info-box ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+    list-style: circle;
+    padding-left: 10%;
+}
+.info-box ul li {
+    margin-bottom: 4px;
+}
+
+
+
+/* Media */
+img {
+    width: 100%;
+}
+.media img {
+    filter: sepia(50%) grayscale(30%);
+}
+video {
+    width: 100%;
+    /* margin-left: 10%; */
+}
+.media {
+    background-color: grey;
+    border: black solid 6px;
+    border-radius: 5%;
+    padding: 1%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.media h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: black;
+    color: red;
+    padding: 15px;
+    line-height: 2;
+}
+footer a {
+    color:lightgrey;
+}
+
+
+
+
+/* Responsivness */
+
+/* To fix lists and title images on smaller screens */
+@media screen and (max-width:550px) {
+    .info-box ul {
+        grid-template-columns: auto auto;
+    }
+    .title-box img {
+        display: none;
+    }
+}
+@media screen and (max-width:400px) {
+    .info-box ul {
+        grid-template-columns: auto;
+    }
+}
+
+
+@media screen and (min-width:900px){
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        padding: 50px;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    .media {
+        /* display: flex; */
+        align-items: center;
+        width: 49%;
+        margin-left: auto;
+    }
+    .info-box {
+        /* order: 2; */
+        width: 49%;
+    }
+    .info-box ul {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* Increases responsiveness for images and videos */
+@media screen and (min-width:1400px) {
+    .main {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}

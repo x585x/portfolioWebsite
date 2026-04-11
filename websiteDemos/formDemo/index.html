@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Ben Conlon -->
+        <!-- W0871919 -->
+        <!-- October 28th 2025 -->
+        <!-- Assignment 6 -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms - Assignment 6</title>
+        <link href="./css/myersReset.css" rel="stylesheet">
+        <link href="./css/styles.css" rel="stylesheet">
+
+        <!-- Adding custom font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form action="#" method="get">
+            <h1>Student Info Form</h1>
+            <h2><a style="color: red;" href="../../index.html">Back to resume page</a></h2>
+            <h2>Please take a moment to fill out this form:</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" autofocus required/>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required/>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required/>
+
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday" required/>
+
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="address" placeholder="1234 coolguy street" required/>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required/>
+
+            <label for="province">Province:</label>
+            <input type="text" id="province" name="province" required/>
+
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" name="postalCode" required/>
+
+            <label for="phoneNum">Phone Number:</label>
+            <input type="tel" id="phoneNum" name="phoneNum" placeholder="(000) 000-0000" pattern="\([2-9][1-9]{2}\) [0-9]{3}-[0-9]{4}"/>
+            
+            <h2>Are you enrolling for an evening course or a morning course?</h2>
+            <label>Evening:
+                <input type="radio" value="eveningCourse" name="courseTime" checked />
+            </label>
+            
+            <label>Evening:
+                <input type="radio" value="morningCourse" name="courseTime"/>
+            </label>
+
+
+            <h2>Which course would you like to enroll in?</h2>
+            <label>Advanced Python - ITCC 353
+                <input type="radio" value="ITCC353" name="course" checked />
+            </label>
+            <label>Java Advanced - ITCC 118
+                <input type="radio" value="ITCC118" name="course"/>
+            </label>
+            <label>Fundamentals of Cloud Computing - ITCC 630
+                <input type="radio" value="ITCC630" name="course"/>
+            </label>
+            <label>Introduction to Project JavaScript - ITCC 138
+                <input type="radio" value="ITCC138" name="course"/>
+            </label>
+            <label>Programming in C - ITCC 229
+                <input type="radio" value="ITCC229" name="course"/>
+            </label>
+            <label>Web Design for Mobile Applications - ITCC 182
+                <input type="radio" value="ITCC182" name="course"/>
+            </label>
+
+            <input type="submit" name="submit" value="Enroll Now!!!">
+            <input type="reset">
+        </form>
+        <img src="./img/logo.png" alt="St. Clair College Logo.">
+        <footer>
+            <p>Copyright - Ben Conlon - 2025</p>
+            <p>Image from <a href="https://www.stclaircollege.ca/">St. Clair</a> Website.</p>
+        </footer>
+    </body>
+</html>

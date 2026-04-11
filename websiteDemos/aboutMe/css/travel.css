@@ -1,0 +1,14 @@
+/* Minor changes to get the travel page to display virtically */
+
+body > section {
+    flex-direction: column;
+    justify-content: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    margin-bottom: 40px;
+}

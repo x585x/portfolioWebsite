@@ -1,0 +1,149 @@
+/* --------------------------------------------------------------
+TABLE OF CONTENTS:
+1. Navigation bar
+2. Main content
+3. Headings
+4. paragraphs
+5. Links
+6. Lists
+7. Footer
+
+TYPOGRAPHY GUIDE:
+fonts: 
+Text: Mulish, 15px
+Headings: Inter Tight, bold, 30px, 20px
+
+
+COLOR GUIDE:
+background: #610f75 (purple)
+background of nav: rgb(218, 111, 245) (pink)
+text: black
+borders: black
+large headings: blue
+
+---------------------------------------------------------------*/
+
+body {
+    margin: 30px;
+    background-color: #610f75;
+    font-family: Mulish;
+    font-weight: 600;
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 111, 245);
+}
+nav > a {
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 15px;
+    font-family: 'Inter Tight';
+    color: rgb(49, 24, 34);
+}
+nav > a:hover {
+    color: rgb(99, 50, 69);
+    font-size: 140%;
+}
+
+/* main Content */
+body > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section > section {
+    background-color: lightgrey;
+    border: 5px solid black;
+    margin: 15px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to bottom left, lightblue, lightgrey);
+}
+img {
+    border: 10px solid lightgrey;
+    border: 5px solid black;
+}
+
+
+
+/* Headings */
+
+/* h3 is only to get rid of an error and will be given a size of 0px */
+h3 {
+    font-size: 0px;
+}
+h1, h2 {
+    font-family: 'Inter Tight';
+    font-weight: bold;
+}
+h1 {
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+    color: lightblue;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 20px;
+    margin: 15px;
+    margin-bottom: 8px;
+}
+
+/* paragraph */
+p {
+    margin: 15px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+/* links */
+a {
+    font-family: Mulish;
+}
+
+
+li a {
+    font-size: 20px;
+    margin-right: 50px;
+    font-family: Mulish;
+}
+
+/* lists */
+li {
+    margin: 20px;
+    margin-left: 60px;
+    list-style: circle;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+
+footer * {
+    padding: 0px;
+    margin: 10px;
+}
+footer p {
+    font-size: 15px;
+}
+
+footer a {
+    color: black;
+    font-size: 15px;
+}
+footer a:visited {
+    color: pink;
+    font-size: 15px;
+}
+footer a:hover {
+    font-size: 18px;
+}
