@@ -1,5 +1,13 @@
 // makes textboxes grow and link to a page when clicked
-const links = ["https://github.com/x585x/AI_Object_Recognition_Script", "./websiteDemos/aboutMe/index.html", "./websiteDemos/ultrakillDemo/index.html", "./websiteDemos/movieDemo/index.html", "./websiteDemos/formDemo/index.html", "./websiteDemos/dumbAndDumberDemo/index.html", "./websiteDemos/scheduleDemo/index.html"];
+const links = [
+    "https://github.com/x585x/AI_Object_Recognition_Script", 
+    "https://github.com/x585x/portfolioWebsite",
+    "./websiteDemos/aboutMe/index.html", 
+    "./websiteDemos/ultrakillDemo/index.html", 
+    "./websiteDemos/movieDemo/index.html", 
+    "./websiteDemos/formDemo/index.html", 
+    "./websiteDemos/dumbAndDumberDemo/index.html", 
+    "./websiteDemos/scheduleDemo/index.html"];
 
 let webSamepleButtons = document.getElementsByClassName("text-img-box");
 

@@ -1,7 +1,14 @@
 // script to handle the color grid on the webpage
+let grid = document.getElementById("grid");
+
+// hide the grid if the window is smaller than the set pixel count
+if (window.visualViewport.width < 500) {
+    grid.remove();
+} else {
+let count = 0;
+
 let startButton = document.getElementById("draw-grid");
 let gridControls = document.getElementById("grid-controls");
-let count = 0;
 
 // Toggles drawing when the mouse is down
 let isDrawing = false;
@@ -104,5 +111,6 @@ function solidFill() {
             squares.push(currentRow.appendChild(newSquare));
         }
     }
+}
 }
 }
