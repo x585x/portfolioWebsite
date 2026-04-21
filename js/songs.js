@@ -7,8 +7,22 @@ console.log("hi");
 let url = new URL(url_string);
 let password = url.searchParams.get("password");
 
-// check if password is correct
+let authenticated = url.searchParams.get("authenticated");
+if ((authenticated == null) || (authenticated == false)) {
+    authenticated = false;
+    url.searchParams.set("authenticated", false);
+    window.location.href = url.toString();
+}
+
+// check if password is correct or if user has been authenticated
 if (password == "pass3434") {
+    authenticated = "true";
+    url.searchParams.delete("password");
+    url.searchParams.set("authenticated", "true");
+    window.location.href = url.toString();
+}
+
+if (authenticated == "true") {
     // remove the password box from the page
     let content = document.getElementsByClassName("content")[0];
     let password_section = document.getElementById("password-section"); // a div containing password related html
