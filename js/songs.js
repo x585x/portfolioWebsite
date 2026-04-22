@@ -8,7 +8,7 @@ let url = new URL(url_string);
 let password = url.searchParams.get("password");
 
 let authenticated = url.searchParams.get("authenticated");
-if ((authenticated == null) || (authenticated == false)) {
+if ((authenticated == null)) {
     authenticated = false;
     url.searchParams.set("authenticated", false);
     window.location.href = url.toString();
